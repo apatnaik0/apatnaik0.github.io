@@ -158,6 +158,12 @@ body {
     justify-content: center;
 }
 
+.view-more-container {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
 .btn {
     padding: 0.8rem 2rem;
     border-radius: 50px;
