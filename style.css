@@ -228,6 +228,7 @@ body {
     margin-bottom: 1.5rem;
     font-size: 1.1rem;
     color: var(--text-muted);
+    text-align: justify;
 }
 
 .about-text strong {
