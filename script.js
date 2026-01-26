@@ -102,13 +102,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 printOutput("Available commands: [whoami, projects, contact, skills, f1, cooking, clear, sudo hire user]");
                 break;
             case 'whoami':
-                printOutput("First-year Master's student. Python/Java enthusiast. Aspiring AI Engineer.");
+                printOutput("First-year Master's student. Deep Learning enthusiast. Aspiring AI/ML Engineer.");
                 break;
             case 'projects':
-                printOutput("Fetching projects...\n1. Neonatal Seizure Detection (Deep Learning)\n2. RAG Enhanced Authorship Classification (NLP)\n3. Web Application Firewall (ML)");
+                printOutput("Fetching projects...\n1. MyTorch: Custom Deep Learning Framework from Scratch  \n2. Neonatal Seizure Detection (Deep Learning) \n3. RAG Enhanced Authorship Classification (NLP)");
                 break;
             case 'skills':
-                printOutput("Languages: Python, C++, SQL, JS\nML: PyTorch, TensorFlow, NLP\nTools: Azure, Docker, Kubernetes");
+                printOutput("Languages: Python, C++, SQL, R \nML: PyTorch, TensorFlow, NLP, GenAI \nTools: Azure, Github, Docker, Kubernetes");
                 break;
             case 'contact':
                 printOutput("Opening mail client...");
@@ -117,10 +117,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 }, 1000);
                 break;
             case 'f1':
-                printOutput("Fast cars and data analytics. Ask me about the latest Grand Prix stats!");
+                printOutput("I'm a big fan of Formula 1 and I love to look at Telemetry Data! My favourite driver is Lewis Hamilton and my favourite race circuit is Marina Bay (Singapore)");
                 break;
             case 'cooking':
-                printOutput("I code in Python, but I also cook a mean curry. Multithreading in the kitchen is a real skill.");
+                printOutput("Cooking is a theraputic process for me, I'd say by best dish is a good fried rice with a side of stir fried vegetables");
                 break;
             case 'clear':
                 terminalOutput.innerHTML = '';
@@ -128,7 +128,7 @@ document.addEventListener('DOMContentLoaded', () => {
             case 'sudo hire user':
                 printOutput("Access Granted. Redirecting to LinkedIn...");
                 setTimeout(() => {
-                    window.open("https://linkedin.com/in/INSERT_USERNAME", "_blank");
+                    window.open("https://linkedin.com/in/anish-patnaik-7241a6179/", "_blank");
                 }, 1500);
                 break;
             default:

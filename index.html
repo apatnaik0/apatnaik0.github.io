@@ -97,12 +97,15 @@
                         <h4>Optum – UnitedHealth Group</h4>
                         <p class="timeline-date">Jul 2022 – Aug 2025</p>
                         <ul>
-                            <li>Built end-to-end NLP pipelines for appeal PDFs using DiT models & OpenAI LLMs
+                            <li>Engineered an end-to-end DiT & OpenAI LLM pipeline to classify appeal intents
                                 (<strong>97.5%
-                                </strong>accuracy).</li>
-                            <li>Designed real-time risk assessment models and deployed using Azure Functions (<strong>
-                                    <50ms </strong>latency).</li>
-                            <li>Engineered employee similarity microservices serving <strong>400k+</strong> users.</li>
+                                </strong>accuracy, <strong>~$1.4M</strong> savings, <strong>15%</strong> processing time
+                                reduction).</li>
+                            <li>Built and deployed a real-time access risk review model using Azure Functions (<strong>
+                                    <50ms </strong>latency, <strong>~400k</strong> employees served).</li>
+                            <li>Prototyped a Random Forest access recommendation model by designing a scalable Jaccard
+                                similarity engine, synthesizing features from peer access overlap (<strong>96.1</strong>
+                                AUC).</li>
                         </ul>
                     </div>
                 </div>
@@ -113,9 +116,11 @@
                         <h4>ConceptWaves Software Solutions</h4>
                         <p class="timeline-date">Jan 2022 – May 2022</p>
                         <ul>
-                            <li>Developed an MBA admission chance estimator based on academic
-                                credentials(<strong>92%</strong> accuracy).</li>
-                            <li>Optimized random forest models with extensive feature engineering and parameter tuning.
+                            <li>Developed an XGBoost model to predict MBA admission chances based on academic
+                                credentials and extracurriculars(<strong>92%</strong> accuracy).</li>
+                            <li>Optimized model performance by 15% through rigorous feature importance analysis and
+                                packaged the workflow into reproducible Jupyter notebooks for client integrationring and
+                                parameter tuning.
                             </li>
                         </ul>
                     </div>
@@ -142,6 +147,25 @@
         <div class="container">
             <h2 class="section-title">Featured Projects</h2>
             <div class="projects-grid">
+                <div class="project-card">
+                    <div class="card-content">
+                        <h3>MyTorch: Custom Deep Learning library built from scratch</h3>
+                        <p class="card-summary">Architected a custom deep learning library from scratch, implementing
+                            full backpropagation and optimization engines.</p>
+                        <ul class="tech-stack">
+                            <li>Python</li>
+                            <li>Deep Learning</li>
+                            <li>MLP</li>
+                            <li>Backpropagation</li>
+                            <li>Optimization</li>
+
+                        </ul>
+                        <div class="card-links">
+                            <a href="https://github.com/apatnaik0/MyTorch" class="view-code">View
+                                Code</a>
+                        </div>
+                    </div>
+                </div>
                 <!-- Project 1 -->
                 <div class="project-card">
                     <div class="card-content">
@@ -182,24 +206,7 @@
                     </div>
                 </div>
                 <!-- Project 3 -->
-                <div class="project-card">
-                    <div class="card-content">
-                        <h3>Web Application Firewall (ML)</h3>
-                        <p class="card-summary">XGBoost-based firewall to detect malicious web traffic with high
-                            accuracy.</p>
-                        <ul class="tech-stack">
-                            <li>Python</li>
-                            <li>XGBoost</li>
-                            <li>Cybersecurity</li>
-                            <li>Feature Engineering</li>
-                            <li>OWASP</li>
-                        </ul>
-                        <div class="card-links">
-                            <a href="https://github.com/apatnaik0/Web-Application-Firewall" class="view-code">View
-                                Code</a>
-                        </div>
-                    </div>
-                </div>
+
             </div>
         </div>
         <div class="view-more-container">
@@ -211,7 +218,34 @@
         <div class="container">
             <h2 class="section-title">Featured Updates</h2>
             <div class="blogs-grid">
+                <div class="blog-card">
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">Jan 20, 2026</span>
+                            <span class="blog-tag">Hackathon</span>
+                        </div>
+                        <h3>2nd Place at UCSD SMASH: Tackling Scientific Out-of-Distribution Challenges</h3>
+                        <p class="blog-excerpt">A look at how we applied robust time-series forecasting to predict
+                            coastal flooding and secure silver in the NSF HDR challenge.</p>
+                        <a href="https://www.linkedin.com/posts/anish-patnaik-7241a6179_datascience-machinelearning-hackathon-activity-7419770819456843777-EtcQ?utm_source=share&utm_medium=member_desktop&rcm=ACoAACo1cowBYxqwKin8MJx6AO-IlM4fHoqKBdE"
+                            target="_blank" class="blog-link">Read on LinkedIn <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
                 <!-- Blog 1 -->
+                <div class="blog-card">
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">Jan 15, 2026</span>
+                            <span class="blog-tag">Deep Learning</span>
+                        </div>
+                        <h3>Building "MyTorch": Deconstructing Deep Learning Abstractions</h3>
+                        <p class="blog-excerpt">TA reflection on the technical challenges of reverse-engineering PyTorch
+                            to bridge the gap between raw theory and software implementation.</p>
+                        <a href="https://www.linkedin.com/posts/anish-patnaik-7241a6179_i-stopped-using-pytorch-for-a-week-to-build-activity-7417960338089754624-LjdN?utm_source=share&utm_medium=member_desktop&rcm=ACoAACo1cowBYxqwKin8MJx6AO-IlM4fHoqKBdE"
+                            target="_blank" class="blog-link">Read on LinkedIn <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Blog 2 -->
                 <div class="blog-card">
                     <div class="blog-content">
                         <div class="blog-meta">
@@ -226,33 +260,9 @@
                     </div>
                 </div>
                 <!-- Blog 2 -->
-                <div class="blog-card">
-                    <div class="blog-content">
-                        <div class="blog-meta">
-                            <span class="blog-date">Nov 20, 2025</span>
-                            <span class="blog-tag">Local AI Agents</span>
-                        </div>
-                        <h3>Building AI Agents at the Edge with Qualcomm</h3>
-                        <p class="blog-excerpt">Insights from the workshop on transforming simple chatbots into
-                            fully functional, local agents using Python and LM Studio.</p>
-                        <a href="https://www.linkedin.com/posts/anish-patnaik-7241a6179_edgeai-qualcomm-ucsd-activity-7397679203258843136-8wQP?utm_source=share&utm_medium=member_desktop&rcm=ACoAACo1cowBYxqwKin8MJx6AO-IlM4fHoqKBdE"
-                            target="_blank" class="blog-link">Read on LinkedIn <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
+
                 <!-- Blog 3 -->
-                <div class="blog-card">
-                    <div class="blog-content">
-                        <div class="blog-meta">
-                            <span class="blog-date">Oct 01, 2025</span>
-                            <span class="blog-tag">Career Update</span>
-                        </div>
-                        <h3>Starting My Graduate Studies at UC San Diego</h3>
-                        <p class="blog-excerpt">Transitioning from Associate Data Scientist to Master's student to
-                            deepen my expertise in Applied AI and solve complex data challenges.</p>
-                        <a href="https://www.linkedin.com/posts/anish-patnaik-7241a6179_exciting-update-after-an-incredible-activity-7379175030917640193--AOf?utm_source=share&utm_medium=member_desktop&rcm=ACoAACo1cowBYxqwKin8MJx6AO-IlM4fHoqKBdE"
-                            target="_blank" class="blog-link">Read on LinkedIn <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
+
             </div>
         </div>
         <div class="view-more-container">
@@ -271,6 +281,7 @@
                         <span>Python</span>
                         <span>C++</span>
                         <span>SQL</span>
+                        <span>R</span>
                     </div>
                 </div>
                 <div class="skill-category">
