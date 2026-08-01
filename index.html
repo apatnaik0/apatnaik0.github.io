@@ -4,338 +4,391 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anish Patnaik </title>
+    <title>Anish Patnaik | Software, ML & Infrastructure</title>
     <meta name="description"
-        content="Portfolio of Anish Patnaik, a Master's student in Data Science at UCSD specializing in ML, NLP, and Deep Learning.">
+        content="Portfolio of Anish Patnaik, an MS Data Science student at UC San Diego focused on software engineering, ML systems, cloud infrastructure, and applied AI.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <!-- Placeholder for FA -->
-    <!-- Using a CDN for icons since we don't have a build step/node_modules yet, or we can use SVG directly. I'll use simple text or assume FA is available or use SVGs for reliability in a pure HTML/CSS build -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=20260729-tabs-static">
 </head>
 
 <body>
-    <div class="background-animation"></div>
-
-    <nav class="navbar">
-        <div class="logo">AP.</div>
+    <nav class="navbar" aria-label="Primary navigation">
+        <a class="logo" href="#portfolio" aria-label="Anish Patnaik home">AP.</a>
         <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#blogs">Blogs</a></li>
-            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
-        <div class="hamburger">
+        <button class="hamburger" type="button" aria-label="Open navigation" aria-expanded="false">
             <span></span>
             <span></span>
             <span></span>
-        </div>
+        </button>
     </nav>
 
-    <header id="hero" class="hero-section">
-        <div class="hero-content">
-            <div class="profile-img-container fade-in-up">
-                <img src="profile_placeholder.jpeg" alt="Anish Patnaik" class="profile-img">
-            </div>
-            <h1 class="fade-in-up delay-1">Hi, I'm <span class="highlight">Anish Patnaik</span></h1>
-            <h2 class="fade-in-up delay-1">Master's Student in Data Science at UCSD</h2>
-            <p class="fade-in-up delay-2">Ex - Associate Data Scientist @ Optum - UHG</p>
-            <p class="fade-in-up delay-3">Applied ML • Deep Learning • ML System Design</p>
-
-            <div class="cta-group fade-in-up delay-4">
-                <a href="Anish_Patnaik_Resume.pdf" class="btn primary-btn" download>View Resume</a>
-                <a href="#projects" class="btn secondary-btn">View Work</a>
-            </div>
+    <main id="portfolio" class="portfolio-shell">
+        <div class="tabs" role="tablist" aria-label="Portfolio sections">
+            <button class="tab-button active" type="button" role="tab" aria-selected="true"
+                data-tab="overview-panel">Overview</button>
+            <button class="tab-button" type="button" role="tab" aria-selected="false"
+                data-tab="experience-panel">Experience</button>
+            <button class="tab-button" type="button" role="tab" aria-selected="false"
+                data-tab="projects-panel">Projects</button>
+            <button class="tab-button" type="button" role="tab" aria-selected="false"
+                data-tab="skills-panel">Skills</button>
+            <button class="tab-button" type="button" role="tab" aria-selected="false"
+                data-tab="education-panel">Education</button>
+            <button class="tab-button" type="button" role="tab" aria-selected="false"
+                data-tab="interests-panel">Interests</button>
         </div>
-    </header>
 
-    <section id="about" class="section">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-grid">
-                <div class="about-text">
-                    <p>I am a Data Science graduate student at <strong>UC San Diego</strong>, focused on building
-                        scalable Machine Learning and AI systems that solve complex real-world challenges. Previously, I
-                        served as an Associate Data Scientist at <strong>Optum - UHG</strong>, where I engineered
-                        production-grade NLP pipelines and end-to-end access risk assessment systems.</p>
-                    <p>My technical focus lies at the intersection of <strong>Applied ML, Deep Learning and ML System
-                            Design</strong>. Beyond code, I’m an experimental home cook, an F1 telemetry nerd and a
-                        classic rock enthusiast.
+        <section id="overview-panel" class="tab-panel overview-panel active" role="tabpanel">
+            <div class="hero-layout">
+                <div class="hero-copy">
+                    <p class="eyebrow">Applied AI · ML Systems · Cloud Infrastructure</p>
+                    <h1>Anish Patnaik</h1>
+                    <p class="hero-lede">
+                        MS Data Science student at UC San Diego with software engineering experience at Amazon and
+                        production ML experience at Optum - UHG. I like building systems where data, models, APIs, and
+                        infrastructure have to work reliably together.
                     </p>
+                    <div class="cta-group">
+                        <a href="AnishPatnaik_Resume_SWE.pdf" class="btn primary-btn" target="_blank"
+                            rel="noopener">Resume</a>
+                        <a href="mailto:apatnaik0@gmail.com" class="btn secondary-btn">Email</a>
+                        <a href="https://github.com/apatnaik0" class="btn secondary-btn" target="_blank"
+                            rel="noopener">GitHub</a>
+                        <a href="https://www.linkedin.com/in/anish-patnaik-7241a6179/" class="btn secondary-btn"
+                            target="_blank" rel="noopener">LinkedIn</a>
+                    </div>
                 </div>
-                <div class="education-card">
-                    <h3>Education</h3>
-                    <div class="edu-item">
-                        <h4>MS in Data Science</h4>
-                        <p class="edu-school">University of California – San Diego</p>
-                        <p class="edu-date">Sep 2025 – Present</p>
-                        <p class="edu-details">GPA: <strong>4.0/4.0</strong></p>
-                    </div>
-                    <div class="edu-item">
-                        <h4>B. Tech in Electronics & Communication</h4>
-                        <p class="edu-school">Manipal Institute of Technology</p>
-                        <p class="edu-date">Jul 2018 – May 2022</p>
-                        <p class="edu-details">GPA: <strong>9.39/10</strong> | Minor in Data Science</p>
-                    </div>
+                <div class="hero-profile">
+                    <img src="profile_placeholder.jpeg" alt="Anish Patnaik" class="profile-img">
                 </div>
             </div>
-        </div>
-    </section>
 
-    <section id="experience" class="section">
-        <div class="container">
-            <h2 class="section-title">Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>Associate Data Scientist</h3>
-                        <h4>Optum – UnitedHealth Group</h4>
-                        <p class="timeline-date">Jul 2022 – Aug 2025</p>
-                        <ul>
-                            <li>Engineered an end-to-end DiT & OpenAI LLM pipeline to classify appeal intents
-                                (<strong>97.5%
-                                </strong>accuracy, <strong>~$1.4M</strong> savings, <strong>15%</strong> processing time
-                                reduction).</li>
-                            <li>Built and deployed a real-time access risk review model using Azure Functions (<strong>
-                                    <50ms </strong>latency, <strong>~400k</strong> employees served).</li>
-                            <li>Prototyped a Random Forest access recommendation model by designing a scalable Jaccard
-                                similarity engine, synthesizing features from peer access overlap (<strong>96.1</strong>
-                                AUC).</li>
-                        </ul>
+            <div class="overview-stack">
+                <div class="impact-grid" aria-label="Selected highlights">
+                    <div class="impact-item">
+                        <strong>Amazon</strong>
+                        <span>Building sync infrastructure for ownership updates across <b>3M+ AWS accounts</b>.</span>
+                    </div>
+                    <div class="impact-item">
+                        <strong>Cloud Systems</strong>
+                        <span>Served <b>100k+ requests</b> through a serverless event-driven architecture with under
+                            <b>50ms latency</b>.</span>
+                    </div>
+                    <div class="impact-item">
+                        <strong>AI Fluency</strong>
+                        <span>Fluent with AI coding agents for accelerating development, analysis, solution design,
+                            implementation and debugging across engineering workflows.</span>
+                    </div>
+                    <div class="impact-item">
+                        <strong>Business Impact</strong>
+                        <span>Delivered automation and analytics work tied to <b>~$1.9M in annual savings</b> across
+                            appeal processing and evaluation.</span>
                     </div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>Machine Learning Intern</h3>
-                        <h4>ConceptWaves Software Solutions</h4>
-                        <p class="timeline-date">Jan 2022 – May 2022</p>
+
+                <div class="overview-grid" aria-label="At a glance">
+                    <article class="overview-card">
+                        <p class="eyebrow">At a Glance</p>
+                        <h2>Software engineer with production ML experience.</h2>
+                        <p>
+                            My work spans cloud infrastructure, distributed sync flows, model-backed APIs, LLM
+                            integration, data pipelines, dashboards, and applied machine learning.
+                        </p>
+                    </article>
+
+                    <article class="overview-card">
+                        <p class="eyebrow">Current Focus</p>
                         <ul>
-                            <li>Developed an XGBoost model to predict MBA admission chances based on academic
-                                credentials and extracurriculars(<strong>92%</strong> accuracy).</li>
-                            <li>Optimized model performance by 15% through rigorous feature importance analysis and
-                                packaged the workflow into reproducible Jupyter notebooks for client integrationring and
-                                parameter tuning.
-                            </li>
+                            <li>MS Data Science, UC San Diego, GPA 4.0/4.0</li>
+                            <li>AWS Lambda, SQS, SNS, S3, DynamoDB, CloudWatch, IAM</li>
+                            <li>Python, Java, TypeScript, C++, SQL, R</li>
+                            <li>Cloud architecture, Machine Learning, Software Engineering</li>
                         </ul>
-                    </div>
-                </div>
-                <!-- ESDS internship merged into 'Projects' or kept here? The prompt said feature 3 projects, one was from ESDS. I will keep ESDS here as experience too for completeness. -->
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>Technical Intern</h3>
-                        <h4>ESDS Software Solutions</h4>
-                        <p class="timeline-date">May 2020 – Jun 2020</p>
-                        <ul>
-                            <li>Built an POC Web Application Firewall using XGBoost (<strong>90.8%</strong> accuracy).
-                            </li>
-                            <li>Analyzed web traffic logs to detect malicious web requests.</li>
-                        </ul>
-                    </div>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="projects" class="section">
-        <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
+        <section id="experience-panel" class="tab-panel" role="tabpanel">
+            <div class="section-heading">
+                <p class="eyebrow">Professional Work</p>
+                <h2>Experience</h2>
+            </div>
+
+            <div class="experience-list">
+                <article class="experience-item featured-item">
+                    <div class="item-header">
+                        <div>
+                            <p class="company-name">Amazon</p>
+                            <h3>Software Development Engineer Intern</h3>
+                        </div>
+                        <span>Jun 2026 - Sep 2026 · Seattle, WA</span>
+                    </div>
+                    <ul>
+                        <li>Designing dedicated sync infrastructure with a direct AWS Lambda invocation path for
+                            user-triggered ownership updates across 3M+ AWS accounts, allowing urgent requests to bypass
+                            SQS batch backlogs and return feedback in seconds.</li>
+                        <li>Implementing a DynamoDB freshness table with conditional writes so older S3 snapshot and
+                            event-driven updates cannot overwrite ownership data refreshed from live sources.</li>
+                        <li>Refactoring scheduled, event-driven, and on-demand sync flows to carry source timestamps and
+                            freshness metadata across live API reads, daily snapshots, delayed notifications, and
+                            retries.</li>
+                        <li>Designing integration tests and CloudWatch dashboards for retries, DLQ handling, stale-write
+                            prevention, p50/p99 latency, Lambda errors, throttles, and rollout safeguards.</li>
+                    </ul>
+                </article>
+
+                <article class="experience-item">
+                    <div class="item-header">
+                        <div>
+                            <p class="company-name">Optum · UnitedHealth Group</p>
+                            <h3>Associate Data Scientist</h3>
+                        </div>
+                        <span>Jul 2022 - Aug 2025 · Hyderabad, India</span>
+                    </div>
+                    <ul>
+                        <li>Built an end-to-end extraction pipeline with OpenAI APIs and DiT models to automate appeal
+                            processing, reduce manual review work by 15%, and save approximately $1.4M annually.</li>
+                        <li>Architected a serverless Azure Functions microservice for access risk reviews, serving 100k+
+                            requests with under 50ms latency through optimized internal API calls, structured logging,
+                            and latency tracking.</li>
+                        <li>Developed a 96.1% AUC access recommendation service using peer access similarity features
+                            for 400k+ employees, exposing model outputs through internal APIs and review tools.</li>
+                        <li>Built reusable REST API and database integration patterns for access risk scoring and
+                            reduced new hire attrition from 18% to 11% through EDA workflows across 29 business lines.</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section id="projects-panel" class="tab-panel" role="tabpanel">
+            <div class="section-heading">
+                <p class="eyebrow">Selected Work</p>
+                <h2>Projects</h2>
+            </div>
+
             <div class="projects-grid">
-                <div class="project-card">
-                    <div class="card-content">
-                        <h3>MyTorch: Custom Deep Learning library built from scratch</h3>
-                        <p class="card-summary">Architected a custom deep learning library from scratch, implementing
-                            full backpropagation and optimization engines.</p>
-                        <ul class="tech-stack">
-                            <li>Python</li>
-                            <li>Deep Learning</li>
-                            <li>MLP</li>
-                            <li>Backpropagation</li>
-                            <li>Optimization</li>
+                <article class="project-card">
+                    <div class="project-meta">
+                        <span>Dec 2025 - Jan 2026</span>
+                        <span>Deep Learning Systems</span>
+                    </div>
+                    <h3>MyTorch</h3>
+                    <p>Object-oriented Python deep learning framework with computational graphs, automatic
+                        differentiation, backpropagation, SGD optimization, reusable training loops, and testable layer
+                        modules.</p>
+                    <ul class="tech-stack">
+                        <li>Python</li>
+                        <li>Autograd</li>
+                        <li>OOP</li>
+                        <li>Gradient Checks</li>
+                    </ul>
+                    <a href="https://github.com/apatnaik0/MyTorch" class="text-link" target="_blank"
+                        rel="noopener">View code</a>
+                </article>
 
-                        </ul>
-                        <div class="card-links">
-                            <a href="https://github.com/apatnaik0/MyTorch" class="view-code">View
-                                Code</a>
-                        </div>
+                <article class="project-card">
+                    <div class="project-meta">
+                        <span>Jan 2026</span>
+                        <span>ML Challenge</span>
                     </div>
-                </div>
-                <!-- Project 1 -->
-                <div class="project-card">
-                    <div class="card-content">
-                        <h3>Neonatal Seizure Detection</h3>
-                        <p class="card-summary">Deep learning system to detect seizures from EEG signals using a
-                            CNN-Attention ensemble.</p>
-                        <ul class="tech-stack">
-                            <li>Python</li>
-                            <li>PyTorch</li>
-                            <li>CNN</li>
-                            <li>Attention</li>
-                            <li>Signal Processing</li>
-                        </ul>
-                        <div class="card-links">
-                            <a href="https://github.com/apatnaik0/Neonatal-seizure-detection-using-EEG-Signals-with-Deep-learning-methods"
-                                class="view-code">View Code</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Project 2 -->
-                <div class="project-card">
-                    <div class="card-content">
-                        <h3>RAG Enhanced Authorship Classification</h3>
-                        <p class="card-summary">NLP solution distinguishing AI vs Human content using RAG for
-                            explainability.</p>
-                        <ul class="tech-stack">
-                            <li>Python</li>
-                            <li>NLP</li>
-                            <li>RAG</li>
-                            <li>LLMs</li>
-                            <li>Scikit-learn</li>
-                            <li>Generative AI</li>
-                        </ul>
-                        <div class="card-links">
-                            <a href="https://github.com/apatnaik0/RAG-Enhanced-Authorship-Classification-for-Essays"
-                                class="view-code">View Code</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Project 3 -->
+                    <h3>UCSD SMASH x NSF HDR ML Challenge</h3>
+                    <p>2nd-place reproducible inference pipeline for high-dimensional environmental sensor data,
+                        improving robustness across unseen coastal regions, noisy sensors, and hidden test splits.</p>
+                    <ul class="tech-stack">
+                        <li>Machine Learning</li>
+                        <li>OOD Robustness</li>
+                        <li>Data Pipelines</li>
+                        <li>Codabench</li>
+                    </ul>
+                </article>
 
+                <article class="project-card">
+                    <div class="project-meta">
+                        <span>Jan 2024 - Nov 2024</span>
+                        <span>Health AI</span>
+                    </div>
+                    <h3>Neonatal Seizure Detection</h3>
+                    <p>Real-time EEG seizure detection pipeline over 12,000+ samples with 97.49% accuracy, using a
+                        CNN-Attention ensemble and ICA-based preprocessing for noisy physiological signals.</p>
+                    <ul class="tech-stack">
+                        <li>PyTorch</li>
+                        <li>CNN</li>
+                        <li>Attention</li>
+                        <li>Signal Processing</li>
+                    </ul>
+                    <a href="https://github.com/apatnaik0/Neonatal-seizure-detection-using-EEG-Signals-with-Deep-learning-methods"
+                        class="text-link" target="_blank" rel="noopener">View code</a>
+                </article>
             </div>
-        </div>
-        <div class="view-more-container">
-            <a href="https://github.com/apatnaik0" target="_blank" class="btn secondary-btn">View More on GitHub</a>
-        </div>
-    </section>
+        </section>
 
-    <section id="blogs" class="section">
-        <div class="container">
-            <h2 class="section-title">Featured Updates</h2>
-            <div class="blogs-grid">
-                <div class="blog-card">
-                    <div class="blog-content">
-                        <div class="blog-meta">
-                            <span class="blog-date">Jan 20, 2026</span>
-                            <span class="blog-tag">Hackathon</span>
-                        </div>
-                        <h3>2nd Place at UCSD SMASH: Tackling Scientific Out-of-Distribution Challenges</h3>
-                        <p class="blog-excerpt">A look at how we applied robust time-series forecasting to predict
-                            coastal flooding and secure silver in the NSF HDR challenge.</p>
-                        <a href="https://www.linkedin.com/posts/anish-patnaik-7241a6179_datascience-machinelearning-hackathon-activity-7419770819456843777-EtcQ?utm_source=share&utm_medium=member_desktop&rcm=ACoAACo1cowBYxqwKin8MJx6AO-IlM4fHoqKBdE"
-                            target="_blank" class="blog-link">Read on LinkedIn <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <!-- Blog 1 -->
-                <div class="blog-card">
-                    <div class="blog-content">
-                        <div class="blog-meta">
-                            <span class="blog-date">Jan 15, 2026</span>
-                            <span class="blog-tag">Deep Learning</span>
-                        </div>
-                        <h3>Building "MyTorch": Deconstructing Deep Learning Abstractions</h3>
-                        <p class="blog-excerpt">TA reflection on the technical challenges of reverse-engineering PyTorch
-                            to bridge the gap between raw theory and software implementation.</p>
-                        <a href="https://www.linkedin.com/posts/anish-patnaik-7241a6179_i-stopped-using-pytorch-for-a-week-to-build-activity-7417960338089754624-LjdN?utm_source=share&utm_medium=member_desktop&rcm=ACoAACo1cowBYxqwKin8MJx6AO-IlM4fHoqKBdE"
-                            target="_blank" class="blog-link">Read on LinkedIn <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <!-- Blog 2 -->
-                <div class="blog-card">
-                    <div class="blog-content">
-                        <div class="blog-meta">
-                            <span class="blog-date">Nov 30, 2025</span>
-                            <span class="blog-tag">Tech News</span>
-                        </div>
-                        <h3>Mathematical Superintelligence: The Next Leap in AI</h3>
-                        <p class="blog-excerpt">How Harmonic is moving beyond probabilistic guessing by using formal
-                            reasoning to ensure verifiable accuracy for high-stakes industries.</p>
-                        <a href="https://www.linkedin.com/posts/anish-patnaik-7241a6179_artificialintelligence-machinelearning-technews-activity-7400206093437747200-gWQh?utm_source=share&utm_medium=member_desktop&rcm=ACoAACo1cowBYxqwKin8MJx6AO-IlM4fHoqKBdE"
-                            target="_blank" class="blog-link">Read on LinkedIn <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <!-- Blog 2 -->
-
-                <!-- Blog 3 -->
-
+        <section id="skills-panel" class="tab-panel" role="tabpanel">
+            <div class="section-heading">
+                <p class="eyebrow">Technical Range</p>
+                <h2>Skills</h2>
             </div>
-        </div>
-        <div class="view-more-container">
-            <a href="https://www.linkedin.com/in/anish-patnaik-7241a6179/" target="_blank"
-                class="btn secondary-btn">View More on LinkedIn</a>
-        </div>
-    </section>
 
-    <section id="skills" class="section">
-        <div class="container">
-            <h2 class="section-title">Technical Skills</h2>
             <div class="skills-wrapper">
                 <div class="skill-category">
                     <h3>Languages</h3>
                     <div class="skill-tags">
                         <span>Python</span>
+                        <span>Java</span>
+                        <span>TypeScript</span>
                         <span>C++</span>
                         <span>SQL</span>
                         <span>R</span>
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3>Machine Learning</h3>
+                    <h3>Cloud Tools (AWS & Azure)</h3>
                     <div class="skill-tags">
-                        <span>PyTorch</span>
-                        <span>TensorFlow</span>
-                        <span>Generative AI</span>
-                        <span>Deep Learning</span>
-                        <span>LLMs</span>
-                        <span>NLP</span>
-
+                        <span>AWS Lambda</span>
+                        <span>SQS</span>
+                        <span>SNS</span>
+                        <span>S3</span>
+                        <span>DynamoDB</span>
+                        <span>CloudWatch</span>
+                        <span>IAM</span>
+                        <span>Azure Functions</span>
+                        <span>Azure Blob Storage</span>
+                        <span>Azure Synapse</span>
+                        <span>Azure ML Studio</span>
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3>Tools & Cloud</h3>
+                    <h3>Backend & Systems</h3>
                     <div class="skill-tags">
-                        <span>Azure</span>
+                        <span>REST APIs</span>
+                        <span>Microservices</span>
+                        <span>Distributed Systems</span>
+                        <span>System Design</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>ML & Data</h3>
+                    <div class="skill-tags">
+                        <span>PyTorch</span>
+                        <span>TensorFlow</span>
+                        <span>Transformers</span>
+                        <span>RAG</span>
+                        <span>LLM Integration</span>
+                        <span>Scikit-learn</span>
+                        <span>Deep Learning</span>
+                        <span>NLP</span>
+                        <span>EDA</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>DevOps & Tools</h3>
+                    <div class="skill-tags">
                         <span>Docker</span>
                         <span>Kubernetes</span>
+                        <span>Git</span>
                         <span>GitHub</span>
-                        <span>Power BI</span>
-                        <span>Agile</span>
+                        <span>CI/CD</span>
+                        <span>GitHub Actions</span>
+                        <span>Jenkins</span>
+                        <span>Terraform</span>
+                        <span>Integration Testing</span>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <section id="education-panel" class="tab-panel" role="tabpanel">
+            <div class="section-heading">
+                <p class="eyebrow">Academic Background</p>
+                <h2>Education</h2>
+            </div>
+
+            <div class="education-grid">
+                <article class="education-card">
+                    <h3>University of California San Diego</h3>
+                    <p>MS in Data Science · GPA: 4.0/4.0</p>
+                    <span>Sep 2025 - Dec 2026 · San Diego, CA</span>
+                    <p class="small-copy">Web Mining and Recommender Systems, Scalable Data Systems, ML Systems,
+                        Efficient AI</p>
+                </article>
+                <article class="education-card">
+                    <h3>Manipal Institute of Technology</h3>
+                    <p>BE in Electronics and Communication · GPA: 9.39/10</p>
+                    <span>Jul 2018 - May 2022 · Manipal, India</span>
+                    <p class="small-copy">Minor in Data Science; coursework in Data Structures and Algorithms,
+                        Object-Oriented Programming, Machine Learning, and Data Science</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="interests-panel" class="tab-panel" role="tabpanel">
+            <div class="section-heading">
+                <p class="eyebrow">Outside Work</p>
+                <h2>Interests</h2>
+            </div>
+
+            <div class="interests-grid">
+                <article>
+                    <h3>Formula 1</h3>
+                    <p>I enjoy digging into telemetry, race strategy, and the patterns behind driver and team
+                        performance. Take a look at my F1 dashboard.</p>
+                    <a href="https://apatnaik0.github.io/paddock-iq/index.html" class="text-link" target="_blank"
+                        rel="noopener">Paddock IQ</a>
+                </article>
+                <article>
+                    <h3>Cooking</h3>
+                    <p>I love food, whether it is something I cooked at home or an interesting meal I found outside.
+                        Browse my food journal for both.</p>
+                    <div class="interest-links">
+                        <a href="https://apatnaik0.github.io/Food-Journal/" class="text-link" target="_blank"
+                            rel="noopener">Food Journal</a>
+                    </div>
+                </article>
+                <article>
+                    <h3>Books & Movies</h3>
+                    <p>I gravitate toward sharp storytelling, strong character arcs, and immersive world building.
+                        Browse my Hardcover and Letterboxd profiles.</p>
+                    <div class="interest-links">
+                        <a href="https://hardcover.app/@Anish/books/read?order=owner_last_read_at&direction=desc&start=0&limit=40&view=table"
+                            class="text-link" target="_blank" rel="noopener">Hardcover</a>
+                        <a href="https://letterboxd.com/anishpatnaik/films/size/large/" class="text-link"
+                            target="_blank" rel="noopener">Letterboxd</a>
+                    </div>
+                </article>
+                <article>
+                    <h3>Music</h3>
+                    <p>Music is usually in the background when I’m cooking, reading, or building. Listen through
+                        my music playlists.</p>
+                    <div class="interest-links">
+                        <a href="https://music.apple.com/us/playlist/codeplay/pl.u-xlyNEpVt38RylE" class="text-link"
+                            target="_blank" rel="noopener">CodePlay</a>
+                        <a href="https://music.apple.com/us/playlist/grillie-jean/pl.u-KVXBklLu2lMGXD"
+                            class="text-link" target="_blank" rel="noopener">Grillie Jean</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
 
     <footer id="contact">
         <div class="container">
-            <div class="footer-content">
-                <h3>Let's Connect</h3>
-                <p>Feel free to reach out for collaborations or just a friendly hello</p>
-                <div class="social-links">
-                    <a href="mailto:apatnaik0@gmail.com">Email</a>
-                    <a href="https://www.linkedin.com/in/anish-patnaik-7241a6179/">LinkedIn</a>
-                    <a href=" https://github.com/apatnaik0">GitHub</a>
-                </div>
-                <p class="copyright">&copy; 2025 Anish Patnaik. Built with code.</p>
-                <p class="terminal-hint">Press <kbd>`</kbd> for a surprise</p>
+            <h2>Let’s Connect</h2>
+            <p>I’m open to software engineering, ML engineering, AI engineering, data science, and infrastructure-facing
+                roles where product impact and system reliability both matter.</p>
+            <div class="social-links">
+                <a href="mailto:apatnaik0@gmail.com">Email</a>
+                <a href="https://www.linkedin.com/in/anish-patnaik-7241a6179/" target="_blank"
+                    rel="noopener">LinkedIn</a>
+                <a href="https://github.com/apatnaik0" target="_blank" rel="noopener">GitHub</a>
             </div>
+            <p class="copyright">&copy; 2026 Anish Patnaik.</p>
         </div>
     </footer>
-
-    <div id="terminal-overlay" class="hidden">
-        <div class="terminal-content">
-            <div id="terminal-output"></div>
-            <div class="input-line">
-                <span class="prompt">guest@portfolio:~$</span>
-                <input type="text" id="terminal-input" autocomplete="off" spellcheck="false">
-            </div>
-        </div>
-    </div>
 
     <script src="script.js"></script>
 </body>
